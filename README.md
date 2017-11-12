@@ -6,7 +6,7 @@ This project can generate [OpenSCAD](http://www.openscad.org/) source code for a
 
 This project works completely online in JavaScript. Go to https://ridercz.github.io/OpenSCAD-QR/ and enter the value of your code. The page will generate image of your code (so you can check it's working) and also OpenSCAD code, which will create array with `0` and `1`, representing the code. 
 
-Also provided is simple OpenSCAD module (method) for drawing the encoded QR Code with given parameters:
+Also provided is simple OpenSCAD module (method) `qr_render` for drawing the encoded QR Code with given parameters:
 * `module_size` - the size of single square, default 1x1 mm
 * `height` - extrusion height, default 1 mm
 
