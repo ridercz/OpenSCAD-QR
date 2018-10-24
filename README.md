@@ -1,4 +1,4 @@
-# QR Code generator for OpenSCAD
+﻿# QR Code generator for OpenSCAD
 
 This project can generate [OpenSCAD](http://www.openscad.org/) source code for a QR code encoding given value. There are already [two](https://www.thingiverse.com/thing:258542) [projects](https://www.thingiverse.com/thing:46884) on Thingiverse, but the first does not work properly and the second requires running executable on your machine. So I created third one.
 
@@ -26,3 +26,9 @@ Developed by *Michal Altair Valášek*. For more information see:
 * https://facebook.com/rider.cz/
 
 This work is licensed under terms of the [MIT License](LICENSE).
+
+## Contributor Code of Conduct
+
+This project adheres to No Code of Conduct. We are all adults. We accept anyone's contributions. Nothing else matters.
+
+For more information please visit the [No Code of Conduct](https://github.com/domgetter/NCoC) homepage.
