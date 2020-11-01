@@ -8,7 +8,7 @@
             var data = document.getElementById("url").value;
 
             // Create QR Code
-            var qr = qrcode(0, "L");
+            var qr = qrcode(0, "H");
             qr.addData(data);
             qr.make();
 
@@ -46,14 +46,17 @@
             code += "\r\n";
             code += "// QR code rendering method\r\n";
             code += "module qr_render(data, module_size = 1, height = 1) {\r\n";
+            code += "    eps=0.001;\r\n";
+            code += "    eps2=2*eps1;\r\n";
             code += "    maxmod = len(data) - 1;\r\n";
+            code += "    render(convexity=100)\r\n";
             code += "    union() {\r\n";
             code += "        for(r = [0 : maxmod]) {\r\n";
             code += "            for(c = [0 : maxmod]) {\r\n";
             code += "                if(data[r][c] == 1){\r\n";
             code += "                    xo = c * module_size;\r\n";
             code += "                    yo = (maxmod - r) * module_size;\r\n";
-            code += "                    translate([xo, yo, 0]) cube([module_size, module_size, height]);\r\n";
+            code += "                    translate([xo-eps1, yo-eps1, 0]) cube([module_size+eps2, module_size+eps2, height]);\r\n";
             code += "                }\r\n";
             code += "            }\r\n";
             code += "        }\r\n";
